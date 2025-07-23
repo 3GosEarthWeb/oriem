@@ -1,0 +1,125 @@
+/* Reset and Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0a043c, #03506f);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Wrapper */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Auth Box */
+.auth-box {
+  background: #ffffff;
+  max-width: 400px;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Title */
+.auth-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0a043c;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Form Styles */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Input Group */
+.auth-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-input-group label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.auth-input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.auth-input:focus {
+  border-color: #03506f;
+  outline: none;
+}
+
+/* Error Message */
+.auth-error {
+  color: #ff4d4f;
+  font-size: 0.9rem;
+  background-color: rgba(255, 77, 79, 0.1);
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Submit Button */
+.auth-button {
+  background: #03506f;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: 600;
+}
+
+.auth-button:hover {
+  background: #023e58;
+}
+
+/* Link Styles */
+.auth-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #03506f;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
